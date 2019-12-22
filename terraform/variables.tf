@@ -4,7 +4,7 @@ terraform {
 
 variable "region" {
   type        = string
-  default     = "us-east4"
+  default     = "us-central1"
   description = "Region in which to create the cluster and run Atlantis."
 }
 
@@ -23,16 +23,18 @@ variable "project_prefix" {
 variable "billing_account" {
   type        = string
   description = "Billing account ID."
+  default     = "017189-16EC90-33C776"
 }
 
 variable "org_id" {
   type        = string
   description = "Organization ID."
+  default     = "255594727718"
 }
 
 variable "kubernetes_instance_type" {
   type        = string
-  default     = "n1-standard-2"
+  default     = "n1-standard-1"
   description = "Instance type to use for the nodes."
 }
 

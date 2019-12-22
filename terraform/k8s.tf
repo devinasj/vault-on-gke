@@ -165,7 +165,7 @@ resource "kubernetes_stateful_set" "vault" {
 
           resources {
             requests {
-              cpu    = "500m"
+              cpu    = "250m"
               memory = "256Mi"
             }
           }
